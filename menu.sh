@@ -18,6 +18,7 @@ echo "4. 解压vendor.new.dat.br"
 echo "5. 解压vendor.new.dat(暂未更新)"
 echo "6. 解压vendor.img"
 echo "7. 全自动解压zip刷机包"
+echo "8. 解压payload.bin"
 echo ""
 echo "!. 清理目录"
 echo "#. 退出程序"
@@ -42,6 +43,8 @@ elif [ "$c" == "6" ]; then
 	bash ./scripts/unpackvimg.sh
 elif [ "$c" == "7" ]; then 
 	bash ./scripts/unpack.sh
+elif [ "$c" == "8" ]; then 
+	bash ./scripts/unpackpayload.sh
 elif [ "$c" == "!" ]; then 
 	bash ./scripts/clean.sh
 elif [ "$c" == "*" ]; then 
