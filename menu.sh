@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear
+bash ./scripts/mkdir.sh
 
 echo "将要解压的文件放置到各文件夹内"
 echo ""
