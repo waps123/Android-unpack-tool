@@ -1,9 +1,15 @@
 #!/bin/bash
 
 clear
-bash ./scripts/mkdir.sh
 
-echo "将要解压的文件放置到各文件夹内"
+if [ -e './ZIP' ];then
+ echo "Android-unpack-tool : v1.0"
+else
+ bash ./scripts/mkdir.sh
+ echo "Android-unpack-tool : v1.0"
+fi
+
+echo "请将要解压的文件放置到各文件夹内"
 echo ""
 echo "1. 解压system.new.dat.br"
 echo "2. 解压system.new.dat(暂未更新)"
